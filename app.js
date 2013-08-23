@@ -35,7 +35,7 @@ app.configure('production', function(){
 });
 
 app.get('/', routes.index);
-app.get('/project', routes.project);
+app.get('/project/:name?', routes.project);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port %d on mode %s",
