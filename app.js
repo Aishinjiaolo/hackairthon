@@ -11,6 +11,9 @@ var cons    = require('consolidate');
 
 var app = express();
 
+var projectdb = require('./projectdb').ProjectDB;
+var db        = new projectdb('localhost', 27017);
+
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');

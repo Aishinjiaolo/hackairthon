@@ -7,7 +7,8 @@
     "jade": "*",
     "stylus": "*",
     "swig": "*",
-    "consolidate": "*"
+    "consolidate": "*",
+    "mongodb": "*"
   },
   "engines": {
     "node": "0.10.x",

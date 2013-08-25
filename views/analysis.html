@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>SwordSoft Layout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+* { margin:0; padding:0; }
+html, body { width:100%; height:100%; background:#eeeeee; }
+canvas { display:block; background:#ffffff; /*margin:25px auto; border:1px solid #cccccc*/ }
+div { position:absolute; top:20px; left:20px; width:200px; }
+</style>
+<script type="text/javascript" src="/scripts/projects/analysis.js" charset="utf-8">
+</script>
+<script type="text/javascript" charset="utf-8">
+function initPage() {
+initBar('/img/projects/analysis/prev.png', '/img/projects/analysis/next.png');
+var page = addPage('/img/projects/analysis/page1.png', true);
+page.AddLink(821,181,64,71,1);
+page = addPage('/img/projects/analysis/page2.png', false);
+page.AddLink(735,180,64,71,0);
+page.AddLink(821,181,64,71,2);
+page = addPage('/img/projects/analysis/page3.png', false);
+page.AddLink(840,181,64,71,3);
+page.AddLink(754,180,64,71,1);
+page = addPage('/img/projects/analysis/page4.png', false);
+page.AddLink(735,180,64,71,2);
+page.AddLink(821,181,64,71,4);
+page = addPage('/img/projects/analysis/page5.png', false);
+page.AddLink(840,181,64,71,5);
+page.AddLink(754,180,64,71,3);
+page = addPage('/img/projects/analysis/page6.png', false);
+page.AddLink(756,228,64,71,4);
+}
+</script>
+</head>
+<body>
+<canvas id="drawarea" onmousedown="canvas_onmousedown(event)" onmousemove="canvas_onmousemove(event)" onmouseup="canvas_onmouseup(event)" ondblclick="canvas_ondblclick(event)">
+Your browser does not support canvas.
+</canvas>
+</body>
+</html>
