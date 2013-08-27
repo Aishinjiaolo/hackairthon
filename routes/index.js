@@ -4,6 +4,6 @@ exports.index = function(req, res){
 
 exports.project = function(req, res, next){
   var name      = req.params.name;
-  var html_name = name + '.html';
+  var html_name = '/projects/' + name + '.html';
   res.render(html_name);
 };
